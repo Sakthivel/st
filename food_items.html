@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Food items available at Shankar Transport canteen and stops.">
+    <title>Food Items - Shankar Transport</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .food {
+            padding: 4rem 1.5rem;
+        }
+
+        .food__container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .food__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .food__card {
+            background-color: var(--white);
+            border-radius: 0.5rem;
+            box-shadow: var(--shadow-sm);
+            padding: 1.5rem;
+            border: 1px solid var(--gray-200);
+        }
+
+        .food__name {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: var(--text-dark);
+        }
+
+        .food__category {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .food__price {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 640px) {
+            .food {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="navbar__container">
+                <div class="navbar__logo">
+                    <a href="index.html" aria-label="Go to home page">
+                        <img src="logo.svg" alt="Shankar Transport Logo" class="logo__image" width="150" height="50">
+                    </a>
+                </div>
+                <div class="navbar__actions">
+                    <a href="index.html" class="btn btn--login" aria-label="Back to home">
+                        Home
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="banner" aria-label="Food items banner">
+            <img src="banner.jpg" alt="Delicious food items for drivers and staff" class="banner__image">
+            <div class="banner__overlay">
+                <h1 class="banner__title">Food Items</h1>
+                <p class="banner__subtitle">Tasty and hygienic food options for your journey</p>
+            </div>
+        </section>
+
+        <section class="food" aria-label="Food items list">
+            <div class="food__container">
+                <h2>Snacks &amp; Quick Bites</h2>
+                <div class="food__grid">
+                    <article class="food__card">
+                        <h3 class="food__name">Idly with Sambar &amp; Chutney</h3>
+                        <p class="food__category">South Indian | Vegetarian</p>
+                        <p>Soft steamed idlies served with hot sambar and coconut chutney. Light and filling for early morning trips.</p>
+                        <p class="food__price">₹40 / plate</p>
+                    </article>
+
+                    <article class="food__card">
+                        <h3 class="food__name">Parotta with Kurma</h3>
+                        <p class="food__category">South Indian</p>
+                        <p>Flaky parotta served with flavorful vegetable or egg kurma, perfect for a heavy meal.</p>
+                        <p class="food__price">₹60 / plate</p>
+                    </article>
+
+                    <article class="food__card">
+                        <h3 class="food__name">Egg Omelette</h3>
+                        <p class="food__category">Quick Bite</p>
+                        <p>Freshly prepared omelette with onion, chilli and basic spices, served hot.</p>
+                        <p class="food__price">₹30 / piece</p>
+                    </article>
+
+                    <article class="food__card">
+                        <h3 class="food__name">Vada &amp; Bajji</h3>
+                        <p class="food__category">Snacks</p>
+                        <p>Crispy vadas and assorted bajjis served with chutney for a quick snack break.</p>
+                        <p class="food__price">From ₹15</p>
+                    </article>
+                </div>
+
+                <h2 style="margin-top: 3rem;">Meals &amp; Combos</h2>
+                <div class="food__grid">
+                    <article class="food__card">
+                        <h3 class="food__name">South Indian Lunch Meal</h3>
+                        <p class="food__category">Meal Combo</p>
+                        <p>Rice, sambar, rasam, poriyal, curd and appalam. Simple, homely meal for long routes.</p>
+                        <p class="food__price">₹90 / meal</p>
+                    </article>
+
+                    <article class="food__card">
+                        <h3 class="food__name">Chapati with Curry</h3>
+                        <p class="food__category">Light Meal</p>
+                        <p>Soft chapatis served with vegetable or paneer curry, suitable for light dinner.</p>
+                        <p class="food__price">₹70 / plate</p>
+                    </article>
+
+                    <article class="food__card">
+                        <h3 class="food__name">Tea &amp; Coffee</h3>
+                        <p class="food__category">Beverages</p>
+                        <p>Hot tea and filter coffee available throughout the day for drivers and staff.</p>
+                        <p class="food__price">From ₹15</p>
+                    </article>
+
+                    <article class="food__card">
+                        <h3 class="food__name">Soft Drinks &amp; Packaged Water</h3>
+                        <p class="food__category">Cold Beverages</p>
+                        <p>Cold drinks and bottled drinking water to keep you refreshed on the road.</p>
+                        <p class="food__price">MRP</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p>© 2024 Shankar Transport. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
