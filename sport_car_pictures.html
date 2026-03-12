@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sports car pictures with descriptions and branding on a sunset background.">
+    <title>Sport Car Pictures - Shankar Transport</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .cars {
+            padding: 4rem 1.5rem;
+        }
+
+        .cars__container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cars__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.75rem;
+            margin-top: 2rem;
+        }
+
+        .cars__card {
+            background-color: var(--white);
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--gray-200);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cars__image-wrapper {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cars__image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .cars__card:hover .cars__image {
+            transform: scale(1.05);
+        }
+
+        .cars__content {
+            padding: 1.25rem 1.5rem 1.5rem;
+        }
+
+        .cars__name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: var(--text-dark);
+        }
+
+        .cars__tagline {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 0.75rem;
+        }
+
+        .cars__description {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        .cars__logo-badge {
+            position: absolute;
+            top: 0.75rem;
+            right: 0.75rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 999px;
+            padding: 0.25rem 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            color: #fff;
+            font-size: 0.75rem;
+        }
+
+        .cars__logo-badge img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        @media (max-width: 640px) {
+            .cars {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="navbar__container">
+                <div class="navbar__logo">
+                    <a href="index.html" aria-label="Go to home page">
+                        <img src="logo.svg" alt="Shankar Transport Logo" class="logo__image" width="150" height="50">
+                    </a>
+                </div>
+                <div class="navbar__actions">
+                    <a href="index.html" class="btn btn--login" aria-label="Back to home">
+                        Home
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="banner" aria-label="Sport cars on sunset background">
+            <!-- Replace banner.jpg with a sunset + sports cars background image if available -->
+            <img src="banner.jpg" alt="Sports cars with a sunset background" class="banner__image">
+            <div class="banner__overlay">
+                <h1 class="banner__title">Sport Car Gallery</h1>
+                <p class="banner__subtitle">Iconic sports cars, sunset backdrops and Shankar Transport branding</p>
+            </div>
+        </section>
+
+        <section class="cars" aria-label="Sport car pictures and descriptions">
+            <div class="cars__container">
+                <h2>Featured Sport Cars</h2>
+                <p>
+                    Explore a collection of stunning sports cars, captured against warm sunset skies with our
+                    Shankar Transport logo proudly displayed as part of the visual theme.
+                </p>
+
+                <div class="cars__grid">
+                    <article class="cars__card">
+                        <div class="cars__image-wrapper">
+                            <img src="images/sport-car-1.jpg" alt="Red sports car on highway at sunset" class="cars__image">
+                            <div class="cars__logo-badge">
+                                <img src="logo.svg" alt="Shankar Transport logo">
+                                <span>Shankar Transport</span>
+                            </div>
+                        </div>
+                        <div class="cars__content">
+                            <h3 class="cars__name">Crimson GT</h3>
+                            <p class="cars__tagline">Sunset performance on an open highway</p>
+                            <p class="cars__description">
+                                A low-slung red grand tourer captured in golden hour light, highlighting its sculpted
+                                body lines and sharp LED headlamps as it cruises along the coastal road.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="cars__card">
+                        <div class="cars__image-wrapper">
+                            <img src="images/sport-car-2.jpg" alt="Yellow sports coupe parked with city skyline at dusk" class="cars__image">
+                            <div class="cars__logo-badge">
+                                <img src="logo.svg" alt="Shankar Transport logo">
+                                <span>Shankar Transport</span>
+                            </div>
+                        </div>
+                        <div class="cars__content">
+                            <h3 class="cars__name">Sunflare Coupe</h3>
+                            <p class="cars__tagline">City lights meeting the last rays of sun</p>
+                            <p class="cars__description">
+                                A bright yellow coupe positioned near the waterfront, with a warm orange-pink sky behind
+                                it and reflections of city lights bouncing off its glossy paintwork.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="cars__card">
+                        <div class="cars__image-wrapper">
+                            <img src="images/sport-car-3.jpg" alt="Blue sports car on mountain road with sunset clouds" class="cars__image">
+                            <div class="cars__logo-badge">
+                                <img src="logo.svg" alt="Shankar Transport logo">
+                                <span>Shankar Transport</span>
+                            </div>
+                        </div>
+                        <div class="cars__content">
+                            <h3 class="cars__name">Skyline Racer</h3>
+                            <p class="cars__tagline">Twisting mountain roads and dramatic skies</p>
+                            <p class="cars__description">
+                                A deep blue sports car cornering along a mountain pass, with layered sunset clouds
+                                painting the background in shades of purple and orange.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="cars__card">
+                        <div class="cars__image-wrapper">
+                            <img src="images/sport-car-4.jpg" alt="White sports car at beach with sunset reflections" class="cars__image">
+                            <div class="cars__logo-badge">
+                                <img src="logo.svg" alt="Shankar Transport logo">
+                                <span>Shankar Transport</span>
+                            </div>
+                        </div>
+                        <div class="cars__content">
+                            <h3 class="cars__name">Silverwave Roadster</h3>
+                            <p class="cars__tagline">Open-top freedom by the sea</p>
+                            <p class="cars__description">
+                                A white roadster parked near the shoreline, its curves mirrored in the wet sand while
+                                the sun sets over the horizon, casting long reflections across the beach.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p>© 2024 Shankar Transport. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
